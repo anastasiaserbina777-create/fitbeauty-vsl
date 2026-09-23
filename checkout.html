@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оформлення участі у Fit Beauty">
+  <title>Оформлення участі — Fit Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500&family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="payment.css?v=20260902-2">
+</head>
+<body class="payment-page">
+  <main class="payment-shell">
+    <a class="payment-back" href="index.html">← Повернутися на головну</a>
+
+    <div class="payment-layout">
+      <section class="payment-intro" aria-labelledby="checkout-title">
+        <p class="payment-kicker">Fit Beauty · 30 днів</p>
+        <h1 id="checkout-title">Залиште ваш контакт, щоб отримати знижку</h1>
+
+        <ul class="payment-benefits">
+          <li>12 тренувань на 4 тижні</li>
+          <li>Формат для дому</li>
+          <li>Система харчування та трекер звичок</li>
+          <li>Гайд «Як не зірватися після першого відхилення»</li>
+          <li>Доступ до закритого Telegram-бота</li>
+        </ul>
+
+        <div class="payment-price-row">
+          <span><small>Вартість участі</small><s>2999 грн</s></span>
+          <strong data-payment-amount>1290 грн</strong>
+        </div>
+      </section>
+
+      <section class="checkout-card" aria-labelledby="form-title">
+
+        <form id="payment-form" novalidate>
+          <label class="payment-field">
+            <span>Ім’я та прізвище *</span>
+            <input id="customer-name" name="fullName" type="text" autocomplete="name" placeholder="Наприклад, Анна Іваненко" required>
+            <small class="field-error" data-error-for="fullName"></small>
+          </label>
+
+          <label class="payment-field">
+            <span>Номер телефону *</span>
+            <input id="customer-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+380 00 000 00 00" required>
+            <small class="field-error" data-error-for="phone"></small>
+          </label>
+
+          <label class="payment-field">
+            <span>Email *</span>
+            <input id="customer-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com" required>
+            <small class="field-error" data-error-for="email"></small>
+          </label>
+
+          <button class="payment-submit" type="submit">
+            <span>Отримати знижку</span>
+            <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="payment-status" id="payment-status" role="status" aria-live="polite"></p>
+          <p class="payment-consent">Натискаючи кнопку, ти погоджуєшся з <a href="offer.html">Публічною офертою</a> та <a href="privacy.html">Політикою конфіденційності</a>.</p>
+        </form>
+
+        <p class="payment-security">🔒 Безпечна оплата через WayForPay</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://secure.wayforpay.com/server/pay-widget.js"></script>
+  <script src="meta.js?v=20260917-1"></script>
+  <script src="payment.js?v=20260917-1"></script>
+</body>
+</html>

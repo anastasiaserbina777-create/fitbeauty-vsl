@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Платіж Fit Beauty обробляється">
+  <title>Платіж обробляється — Fit Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="payment.css?v=20260902-2">
+</head>
+<body class="payment-page status-page status-pending">
+  <main class="status-shell">
+    <section class="status-card">
+      <div class="status-icon" aria-hidden="true"></div>
+      <p class="payment-kicker">Перевіряємо платіж</p>
+      <h1>Платіж обробляється</h1>
+      <p id="pending-message" role="status" aria-live="polite">Зачекай кілька секунд — ми перевіряємо статус оплати. Після отримання статусу ти автоматично перейдеш до доступу до курсу.</p>
+      <p class="pending-note">Не закривай сторінку та не проводь оплату повторно.</p>
+
+      <div class="pending-actions" id="pending-actions">
+        <button class="status-primary" id="check-again" type="button">Перевірити ще раз</button>
+        <a class="status-secondary" href="https://t.me/nastyagym_team" data-telegram-type="support">Написати в підтримку</a>
+      </div>
+    </section>
+  </main>
+  <script src="meta.js?v=20260917-1"></script>
+  <script src="payment-pending.js?v=20260917-1"></script>
+</body>
+</html>

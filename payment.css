@@ -1,0 +1,49 @@
+.payment-page{--cream:#f4eee7;--brown:#4b3025;--bronze:#c6672e;--heading:'Unbounded',sans-serif;--body:'Inter',sans-serif;min-height:100vh;background:radial-gradient(circle at 14% 18%,rgba(198,103,46,.13),transparent 31%),linear-gradient(145deg,#17110e 0%,#080706 65%);color:var(--cream);font-family:var(--body);padding:0}
+.payment-shell{width:min(1180px,calc(100% - 40px));margin:auto;padding:34px 0 70px}
+.payment-back{display:inline-flex;margin-bottom:34px;color:rgba(244,238,231,.66);font-size:.85rem;text-decoration:none}
+.payment-back:hover{color:var(--cream)}
+.payment-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.payment-intro h1,.checkout-card h2,.status-card h1{color:var(--cream)}
+.payment-intro h1{max-width:560px;font-size:clamp(2.4rem,5vw,4.6rem)}
+.payment-kicker{margin:0 0 18px;color:#d78a5a;font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.payment-lead{max-width:560px;color:rgba(244,238,231,.7);font-size:1.05rem}
+.payment-benefits{display:grid;gap:13px;margin:30px 0 38px;padding:0;list-style:none}
+.payment-benefits li{position:relative;padding-left:40px;color:rgba(244,238,231,.88);font-weight:600}
+.payment-benefits li::before{content:'✓';position:absolute;left:0;top:-3px;width:28px;height:28px;display:grid;place-items:center;border-radius:8px;color:#e9a274;background:rgba(198,103,46,.17)}
+.payment-price-row{display:flex;justify-content:space-between;align-items:end;gap:24px;max-width:560px;padding-top:24px;border-top:1px solid rgba(244,238,231,.18)}
+.payment-price-row span{display:grid;gap:4px;color:rgba(244,238,231,.48)}
+.payment-price-row small{font-size:.8rem}.payment-price-row s{font-size:.9rem}
+.payment-price-row strong{color:#d9824d;font-family:var(--heading);font-size:clamp(2rem,4vw,3rem)}
+.checkout-card{padding:42px;border:1px solid rgba(244,238,231,.18);border-radius:30px;background:rgba(31,24,20,.92);box-shadow:0 30px 90px rgba(0,0,0,.35)}
+.checkout-card-head h2{margin-bottom:12px;font-size:clamp(1.8rem,3vw,2.7rem)}
+.checkout-card-head>p:last-child{margin:0;color:rgba(244,238,231,.58)}
+.order-summary{margin:28px 0;padding:8px 18px;border:1px solid rgba(244,238,231,.14);border-radius:18px;background:rgba(0,0,0,.16)}
+.order-summary>div{display:flex;justify-content:space-between;gap:24px;padding:13px 0;border-bottom:1px solid rgba(244,238,231,.1)}
+.order-summary>div:last-child{border-bottom:0}.order-summary dt{color:rgba(244,238,231,.55)}.order-summary dd{margin:0;text-align:right;font-weight:700}
+.order-summary .order-total{margin-top:3px;padding-top:17px}.order-summary .order-total dd{color:#d9824d;font-family:var(--heading);font-size:1.2rem}
+.payment-field{display:grid;gap:9px;margin-top:19px}.payment-field>span{font-size:.84rem;font-weight:700}
+.payment-field input{width:100%;height:58px;padding:0 16px;border:1px solid rgba(244,238,231,.19);border-radius:14px;outline:0;color:var(--cream);background:rgba(0,0,0,.24);font:500 1rem var(--body);transition:border-color .2s ease,box-shadow .2s ease}
+.payment-field input::placeholder{color:rgba(244,238,231,.3)}.payment-field input:focus{border-color:#c6672e;box-shadow:0 0 0 3px rgba(198,103,46,.15)}
+.payment-field input[aria-invalid="true"]{border-color:#e56c63}.field-error{min-height:17px;color:#f08e86;font-size:.76rem}
+.payment-submit,.status-primary{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;min-height:62px;margin-top:20px;padding:0 22px;border:0;border-radius:16px;color:var(--cream);background:linear-gradient(135deg,var(--brown),var(--bronze));box-shadow:0 12px 30px rgba(198,103,46,.26);font:800 .82rem var(--heading);text-align:center;text-decoration:none;text-transform:uppercase;cursor:pointer;transition:transform .2s ease,opacity .2s ease}
+.payment-submit:hover,.status-primary:hover{transform:translateY(-2px)}.payment-submit:disabled{cursor:wait;opacity:.62;transform:none}
+.payment-status{min-height:22px;margin:13px 0 0;color:#efbd9e;font-size:.82rem;text-align:center}
+.payment-consent{margin:9px auto 0;color:rgba(244,238,231,.43);font-size:.7rem;text-align:center}.payment-consent a{color:rgba(244,238,231,.61)}
+.payment-security{margin:23px 0 0;padding-top:20px;border-top:1px solid rgba(244,238,231,.12);color:rgba(244,238,231,.47);font-size:.78rem;text-align:center}
+.status-page{display:grid;place-items:center;padding:26px 18px}.status-shell{width:min(650px,100%)}
+.status-card{padding:clamp(34px,7vw,64px);border:1px solid rgba(244,238,231,.17);border-radius:30px;background:rgba(31,24,20,.94);box-shadow:0 30px 90px rgba(0,0,0,.38);text-align:center}
+.status-icon{width:78px;height:78px;display:grid;place-items:center;margin:0 auto 24px;border-radius:50%;font-family:var(--heading);font-size:2rem;font-weight:900}
+.status-success .status-icon{color:#dff6e6;background:rgba(56,153,87,.25);box-shadow:0 0 0 10px rgba(56,153,87,.08)}
+.status-error .status-icon{color:#ffe4df;background:rgba(213,74,58,.25);box-shadow:0 0 0 10px rgba(213,74,58,.08)}
+.status-pending .status-icon{position:relative;background:rgba(198,103,46,.18);box-shadow:0 0 0 10px rgba(198,103,46,.07)}
+.status-pending .status-icon::before{content:'';width:34px;height:34px;border:4px solid rgba(244,238,231,.2);border-top-color:#e9a274;border-radius:50%;animation:payment-spin .9s linear infinite}
+.pending-note{margin-top:18px!important;color:rgba(244,238,231,.48)!important;font-size:.84rem!important}
+.pending-actions{display:none;margin-top:26px}.pending-actions.is-visible{display:block}
+.pending-actions .status-primary{margin-top:0}.pending-actions .status-secondary{margin-top:16px}
+@keyframes payment-spin{to{transform:rotate(360deg)}}
+.status-card h1{max-width:540px;margin:0 auto 20px;font-size:clamp(2rem,6vw,3.4rem)}
+.status-card>p:not(.payment-kicker):not(.status-help){margin:0 auto;color:rgba(244,238,231,.68);font-size:1.05rem}
+.status-primary{margin:30px auto 0;max-width:440px}.status-secondary{display:inline-block;margin-top:18px;color:#e9a274;text-underline-offset:4px}
+.status-help{margin:23px 0 0;color:rgba(244,238,231,.5);font-size:.84rem}.status-help a{color:#e9a274}
+@media(max-width:900px){.payment-layout{grid-template-columns:1fr;gap:42px}.payment-intro{max-width:680px}.payment-intro h1{font-size:clamp(2.7rem,8vw,4.8rem)}}
+@media(max-width:560px){.payment-shell{width:min(100% - 28px,620px);padding:22px 0 40px}.payment-back{margin-bottom:26px}.payment-layout{gap:32px}.payment-intro h1{font-size:clamp(2.35rem,11vw,3.5rem)}.payment-lead{font-size:1rem}.payment-benefits{margin:25px 0 30px}.payment-price-row strong{font-size:1.9rem}.checkout-card{padding:26px 18px;border-radius:24px}.order-summary{padding:7px 14px}.payment-submit{font-size:.72rem}.status-card{border-radius:24px}.status-primary{font-size:.72rem}}
