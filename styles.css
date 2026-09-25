@@ -34,3 +34,9 @@
 .hero-cta-card .sticky-buy-meta mark{padding:3px 7px;border-radius:999px;background:#fff1a8;color:#4b3025;font-weight:900}
 .hero-cta-card .sticky-buy-timer{padding:3px 7px;border-radius:999px;background:rgba(255,255,255,.18);font-variant-numeric:tabular-nums}
 @media(max-width:560px){.hero-cta-card{width:100%}.hero-copy .installment-note{text-align:left}body{padding-bottom:92px}.sticky-buy{bottom:10px!important}}
+
+.hero-after-video{grid-column:1/-1;max-width:760px;margin:0 auto;width:100%}
+.hero-after-video .hero-lead{color:var(--muted);margin:0 0 18px}
+.hero-after-video .hero-meta{margin:0 0 18px}
+.hero-after-video .installment-note{margin-top:10px}
+@media(max-width:900px){.hero-after-video{order:3;max-width:100%}}
