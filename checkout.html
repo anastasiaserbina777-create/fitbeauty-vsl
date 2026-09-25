@@ -18,7 +18,7 @@
     <div class="payment-layout">
       <section class="payment-intro" aria-labelledby="checkout-title">
         <p class="payment-kicker">Fit Beauty · 30 днів</p>
-        <h1 id="checkout-title">Залиште ваш контакт, щоб отримати знижку</h1>
+        <h1 id="checkout-title">Оформлення доступу <span class="checkout-title-step">Крок 1 з 2</span></h1>
 
         <ul class="payment-benefits">
           <li>12 тренувань на 4 тижні</li>
@@ -34,12 +34,12 @@
         </div>
       </section>
 
-      <section class="checkout-card" aria-labelledby="form-title">
+      <section class="checkout-card">
 
         <form id="payment-form" novalidate>
           <label class="payment-field">
-            <span>Ім’я та прізвище *</span>
-            <input id="customer-name" name="fullName" type="text" autocomplete="name" placeholder="Наприклад, Анна Іваненко" required>
+            <span>Ім’я *</span>
+            <input id="customer-name" name="fullName" type="text" autocomplete="name" placeholder="Наприклад, Нікіта" required>
             <small class="field-error" data-error-for="fullName"></small>
           </label>
 
@@ -56,9 +56,13 @@
           </label>
 
           <button class="payment-submit" type="submit">
-            <span>Отримати знижку</span>
+            <span>Оплатити 1290 грн</span>
             <span aria-hidden="true">→</span>
           </button>
+          <div class="payment-after-cta">
+            <p class="payment-access-now">Не чекай! Отримуй доступ до програми вже після оплати</p>
+            <p class="payment-installment">Доступне розтермінування платежів</p>
+          </div>
 
           <p class="payment-status" id="payment-status" role="status" aria-live="polite"></p>
           <p class="payment-consent">Натискаючи кнопку, ти погоджуєшся з <a href="offer.html">Публічною офертою</a> та <a href="privacy.html">Політикою конфіденційності</a>.</p>

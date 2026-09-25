@@ -13,3 +13,24 @@
 @media(max-width:900px){.hero-grid,.about-grid,.audience,.video-layout,.offer-grid{grid-template-columns:1fr;gap:38px}.hero{min-height:auto}.hero-photo{order:2;height:auto;aspect-ratio:9/16}.benefits{grid-template-columns:repeat(2,1fr)}.case-grid{grid-template-columns:repeat(2,1fr)}.program-line{grid-template-columns:repeat(2,1fr)}.video-stage{height:520px}.about-photo{height:500px}.price-card{max-width:520px;margin:auto}.hero-title{max-width:760px;font-size:clamp(3rem,6.2vw,5rem)}}
 @media(max-width:768px){body{padding-bottom:82px}.sticky-buy{position:fixed;z-index:50;left:50%;bottom:14px;display:inline-flex;min-height:54px;width:calc(100% - 28px);max-width:430px;transform:translateX(-50%);transition:opacity .22s ease,visibility .22s ease,transform .22s ease}.review-carousel{padding:0 44px}.review-slide{height:min(68vh,560px)}.review-arrow{width:38px;height:38px}.footer-right{text-align:left}.legal-links{justify-content:flex-start}}
 @media(max-width:560px){.container{width:min(100% - 28px,620px)}.section{padding:72px 0}.hero{padding:30px 0 62px}.hero-grid{gap:30px}.hero-title{font-size:clamp(2.45rem,10.2vw,3.6rem);line-height:1.03;letter-spacing:-.065em;max-width:100%}.hero-title .hero-line{white-space:normal}.hero-photo{border-radius:24px}.stats,.benefits,.case-grid,.program-line,.offer-list{grid-template-columns:1fr}.case-media{height:285px;aspect-ratio:auto}.video-stage{height:450px;transform:scale(.82);transform-origin:center;margin:-35px 0}.video-face{width:210px;height:380px}.video-face:nth-child(1){transform:translate(-50%,-50%) rotateY(0deg) translateZ(155px)}.video-face:nth-child(2){transform:translate(-50%,-50%) rotateY(72deg) translateZ(155px)}.video-face:nth-child(3){transform:translate(-50%,-50%) rotateY(144deg) translateZ(155px)}.video-face:nth-child(4){transform:translate(-50%,-50%) rotateY(216deg) translateZ(155px)}.video-face:nth-child(5){transform:translate(-50%,-50%) rotateY(288deg) translateZ(155px)}.about-photo{height:auto;aspect-ratio:.72}.cases-head{display:block}.timer span{min-width:56px;font-size:.83rem}.review-carousel{padding:0 36px}.review-slide{height:min(65vh,520px)}footer .container{display:block}footer p{margin-bottom:5px}}
+
+.installment-note{margin:12px 0 0;color:var(--muted);font-size:.75rem;font-weight:700;text-align:center}.installment-note-light{color:rgba(244,238,231,.78)!important}
+.sticky-buy{flex-direction:column;gap:3px;height:auto!important;min-height:66px!important;padding:9px 14px!important;text-transform:none!important}
+.sticky-buy-main,.sticky-buy-meta{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px}
+.sticky-buy-title{font:800 .78rem var(--heading);text-transform:uppercase}
+.sticky-buy-price{display:flex;align-items:baseline;gap:7px;white-space:nowrap}
+.sticky-buy-price s{font:600 .68rem var(--body);opacity:.7}
+.sticky-buy-price strong{font:900 .9rem var(--heading)}
+.sticky-buy-meta{font:700 .62rem var(--body);opacity:.96}
+.sticky-buy-meta mark{padding:3px 7px;border-radius:999px;background:#fff1a8;color:#4b3025;font-weight:900}
+.sticky-buy-timer{padding:3px 7px;border-radius:999px;background:rgba(255,255,255,.18);font-variant-numeric:tabular-nums}
+.hero-cta-card{display:inline-flex;flex-direction:column;gap:3px;width:min(100%,420px);min-height:66px;margin-top:4px;padding:12px 14px!important;text-transform:none!important;align-items:stretch;justify-content:center}
+.hero-cta-card .sticky-buy-main,.hero-cta-card .sticky-buy-meta{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px}
+.hero-cta-card .sticky-buy-title{font:800 .78rem var(--heading);text-transform:uppercase}
+.hero-cta-card .sticky-buy-price{display:flex;align-items:baseline;gap:7px;white-space:nowrap}
+.hero-cta-card .sticky-buy-price s{font:600 .68rem var(--body);opacity:.7}
+.hero-cta-card .sticky-buy-price strong{font:900 .9rem var(--heading)}
+.hero-cta-card .sticky-buy-meta{font:700 .62rem var(--body);opacity:.96}
+.hero-cta-card .sticky-buy-meta mark{padding:3px 7px;border-radius:999px;background:#fff1a8;color:#4b3025;font-weight:900}
+.hero-cta-card .sticky-buy-timer{padding:3px 7px;border-radius:999px;background:rgba(255,255,255,.18);font-variant-numeric:tabular-nums}
+@media(max-width:560px){.hero-cta-card{width:100%}.hero-copy .installment-note{text-align:left}body{padding-bottom:92px}.sticky-buy{bottom:10px!important}}

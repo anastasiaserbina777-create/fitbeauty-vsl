@@ -47,3 +47,9 @@
 .status-help{margin:23px 0 0;color:rgba(244,238,231,.5);font-size:.84rem}.status-help a{color:#e9a274}
 @media(max-width:900px){.payment-layout{grid-template-columns:1fr;gap:42px}.payment-intro{max-width:680px}.payment-intro h1{font-size:clamp(2.7rem,8vw,4.8rem)}}
 @media(max-width:560px){.payment-shell{width:min(100% - 28px,620px);padding:22px 0 40px}.payment-back{margin-bottom:26px}.payment-layout{gap:32px}.payment-intro h1{font-size:clamp(2.35rem,11vw,3.5rem)}.payment-lead{font-size:1rem}.payment-benefits{margin:25px 0 30px}.payment-price-row strong{font-size:1.9rem}.checkout-card{padding:26px 18px;border-radius:24px}.order-summary{padding:7px 14px}.payment-submit{font-size:.72rem}.status-card{border-radius:24px}.status-primary{font-size:.72rem}}
+
+.payment-after-cta{display:grid;gap:5px;margin-top:12px;text-align:center}
+.payment-after-cta p{margin:0}
+.payment-access-now{color:#f4eee7;font-size:.8rem;font-weight:800}
+.payment-installment{color:#efbd9e;font-size:.75rem;font-weight:700}
+.checkout-title-step{display:block;margin-top:12px;color:#d9824d;font-size:.32em;letter-spacing:.08em;text-transform:uppercase}

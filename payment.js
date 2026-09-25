@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const phoneDigits = phone.replace(/\D/g, '');
     const normalizedEmail = email.trim().toLowerCase();
 
-    if (nameParts.length < 2) { setFieldError('fullName', 'Вкажи ім’я та прізвище.'); valid = false; }
+    if (nameParts.length < 1) { setFieldError('fullName', 'Вкажи ім’я.'); valid = false; }
     else setFieldError('fullName', '');
 
     if (phoneDigits.length < 9 || phoneDigits.length > 13) { setFieldError('phone', 'Вкажи коректний номер телефону.'); valid = false; }
